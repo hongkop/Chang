@@ -2,3 +2,5 @@ python-telegram-bot
 pytube 
 pydub
 yt-dlp
+aiogram==2.23.1
+flask
