@@ -6,13 +6,13 @@ from yt_dlp import YoutubeDL
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-TOKEN = "YOUR TELEGRAM TOKEN HERE"
+TOKEN = "7748567289:AAFH8xepWgvjE9wE7mUThpsC6S7oOWmpJHg"
 
 DOWNLOAD_FOLDER = './'
 os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text('Hello! Send me a YouTube link and I will convert it to MP3 for you.')
+    await update.message.reply_text('🇰🇭Hello! Send me a YouTube link and I will convert it to MP3 for you.')
 
 async def download_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.message.chat_id
