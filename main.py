@@ -1,3 +1,4 @@
+from aiogram import Bot, Dispatcher, executor, types
 import os
 import logging
 from telegram import Update
@@ -6,7 +7,8 @@ from yt_dlp import YoutubeDL
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-TOKEN = "7748567289:AAFH8xepWgvjE9wE7mUThpsC6S7oOWmpJHg"
+bot = Bot(token=os.environ.get('token')) 
+dp = Dispatcher(bot)
 
 DOWNLOAD_FOLDER = './'
 os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
