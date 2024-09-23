@@ -46,7 +46,7 @@ async def download_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
         except Exception as e:
             logging.error(f"Error processing YouTube link: {e}")
-            await update.message.reply_text("Error processing YouTube link. Please try again.")
+            await update.message.reply_text("🇰🇭Error processing YouTube link. Please try again.")
 
     else:
         await update.message.reply_text("Please provide a valid YouTube link.")
